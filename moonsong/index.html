@@ -1,1 +1,103 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="./favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Cave story .org player demo."/><link rel="apple-touch-icon" href="./logo192.png"/><link rel="manifest" href="./manifest.json"/><title>Moonsong</title><style>#unmute-button{fill:#fff}body{overflow:hidden}</style><link href="./static/css/main.0c907582.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],a=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="./";var f=this.webpackJsonpdotorg=this.webpackJsonpdotorg||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var a=0;a<f.length;a++)r(f[a]);var p=i;t()}([])</script><script src="./static/js/2.d06edae5.chunk.js"></script><script src="./static/js/main.734a6aa9.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cave-story" type="text/css" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Cave story .org player demo."
+    />
+    <title>Moonsong</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #unmute-button {
+        fill: white;
+      }
+
+      body { 
+        overflow: hidden;
+      }
+
+      #controls-panel {
+        position: absolute;
+        top: 1vh;
+        left: 1vh;
+        z-index: 1;
+        float: left;
+        font-family: "Cave Story";
+        color: white;
+        font-size: 6vh;
+        border-radius: 0.2em;
+        background-color: rgba(255, 255, 255, .1);
+      }
+
+      #songname {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        position: unset;
+        display: inline-block;
+      }
+
+      #play-pane {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        position: unset;
+        display: inline-block;
+      }
+
+      #info {
+        padding: 1vh;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+        font-family: "Cave Story";
+        color: white;
+        line-height: 1;
+        font-size: 3vh;
+        margin: 1em;
+        border-radius: 0.2em;
+        background-color: rgba(1, 1, 1, .1);
+      }
+
+      #info ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      #info ul li {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls-panel">
+      <div id="songname">Loading</div>
+      <br />
+      <div id="play-pane">
+        <a id="prev">⏮️</a>
+        <a id="pauseplay">⏸</a>
+        <a id="next">⏭️</a>
+      </div>
+    </div>
+    <div id="info">
+      <ul>
+        <li>Moonsong - A Cave Story Music File Player in JS</li>
+        <li>Heavily referenced from <a href="https://github.com/nxengine/nxengine-evo">NXEngine-Evo</a>.</li>
+        <li><a href="https://github.com/necco-atsume/moonsong">Fork me on github.</a> <a href="https://github.com/necco-atsume/experiments/tree/main/moonsong">(Demo source)</a></li>
+        <li>Cave Story is &copy; Daisuke "Pixel" Amaya.</li>
+      </ul>
+    </div>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script type="text/javascript" src="./pixi.min.js" ></script>
+    <script type="text/javascript" src="./bundle.js" ></script>
+  </body>
+</html>
